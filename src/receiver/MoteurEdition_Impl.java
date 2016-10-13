@@ -69,9 +69,9 @@ public class MoteurEdition_Impl implements MoteurEdition
 		int fin = this.roleSelection.getFin();
 		this.roleBuffer.insert(deb, fin, text);
 	}
-
-	/*public void selection( )
+/*
+	public void selectionner(Selection selection )
 	{
-
+ this.roleSelection= selection;
 	}*/
 }

@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class TestMoteurEdition_Impl {
 
-	//@Test
+	@Test
 	public void testCouper() {
 		Buffer buffer = new Buffer("miage");
 		Selection selection = new Selection(1, 3);
@@ -35,12 +35,12 @@ public class TestMoteurEdition_Impl {
 		moteur.setRolePressePapier(pp);
 		moteur.coller();
 		System.out.println("buffer apr.-> "+buffer.getContent().toString());
-		assertTrue(buffer.display().contentEquals("miagerennes"));
+		assertTrue(buffer.display().contentEquals("mrennesiage"));
 	}
 
 	
 	
-	//@Test
+	@Test
 	public void testInsererTexte()
 	{
 		MoteurEdition_Impl moteur = new MoteurEdition_Impl();
@@ -57,7 +57,7 @@ public class TestMoteurEdition_Impl {
 		assertTrue(buffer.display().contentEquals("miage"));
 	}
 	
-	//@Test
+	@Test
 	public void testCopier(){
 		Buffer buffer = new Buffer("miage");
 		Selection selection = new Selection(1, 3);
